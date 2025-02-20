@@ -38,7 +38,7 @@ function NavMenu({ children }: { children?: ReactNode }) {
         aria-labelledby='navigation-menu' // Optional: Provide a label for context
         data-testid='nav-menu'
         className={clsx(
-          "nav-container bg-background absolute top-16 md:top-20 left-0 right-0 w-full transition-all duration-300 ease-in-out flex flex-col items-center justify-center overflow-hidden gap-8",
+          "nav-container bg-background-main dark:bg-background-main-dark absolute top-16 md:top-20 left-0 right-0 w-full transition-all duration-300 ease-in-out flex flex-col items-center justify-center overflow-hidden gap-8",
           {
             "h-navmenuHeight lg:hidden": isMenuOpen,
             "h-[0]": !isMenuOpen,

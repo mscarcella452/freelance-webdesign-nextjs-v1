@@ -1,3 +1,4 @@
+@import "@/styles/ui-theme-variants.css";
 @tailwind base;
 
 @layer base {
@@ -91,49 +92,49 @@
 
   /*------ headings ------*/
   .text-h-1 {
-    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-secondary text-textColor dark:text-textColor-dark;
+    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-secondary;
   }
 
   .text-h-2 {
-    @apply text-3xl sm:text-4xl lg:text-5xl leading-tight text-textColor dark:text-textColor-dark;
+    @apply text-3xl sm:text-4xl lg:text-5xl leading-tight;
   }
 
   .text-h-3 {
-    @apply text-2xl sm:text-3xl lg:text-4xl text-textColor dark:text-textColor-dark;
+    @apply text-2xl sm:text-3xl lg:text-4xl;
   }
 
   .text-h-4 {
-    @apply text-xl sm:text-2xl lg:text-3xl text-textColor dark:text-textColor-dark;
+    @apply text-xl sm:text-2xl lg:text-3xl;
   }
 
   .text-h-5 {
-    @apply text-lg sm:text-xl lg:text-2xl text-textColor dark:text-textColor-dark;
+    @apply text-lg sm:text-xl lg:text-2xl;
   }
 
   .text-h-6 {
-    @apply text-base sm:text-lg lg:text-xl text-textColor dark:text-textColor-dark;
+    @apply text-base sm:text-lg lg:text-xl;
   }
 
   /*------ paragraphs ------*/
   .text-p {
-    @apply text-base sm:text-lg lg:text-base font-primary text-black;
+    @apply text-base sm:text-lg lg:text-base font-primary;
   }
 
   .text-p-sm {
-    @apply text-sm sm:text-base lg:text-sm font-primary text-black;
+    @apply text-sm sm:text-base lg:text-sm font-primary;
   }
 
   .text-p-lg {
-    @apply text-lg sm:text-xl lg:text-lg font-primary text-black;
+    @apply text-lg sm:text-xl lg:text-lg font-primary;
   }
 
   /*------ captions ------*/
   .text-caption {
-    @apply text-sm sm:text-base font-medium font-primary text-black;
+    @apply text-sm sm:text-base font-medium font-primary;
   }
 
   /*------ small text ------*/
   .text-small {
-    @apply text-xs sm:text-sm font-primary text-black;
+    @apply text-xs sm:text-sm font-primary;
   }
 }

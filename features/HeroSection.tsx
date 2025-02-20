@@ -2,11 +2,11 @@ import React from "react";
 
 function HeroSection() {
   return (
-    <section className='bg-[#f3f3f3] dark:bg-black bg-opacity-30 py-10 sm:py-16 lg:py-24'>
+    <section className='bg-background-main dark:bg-background-main-dark py-10  '>
       <div className='px-4 mx-auto max-w-7xl sm:px-6 lg:px-8'>
         <div className='grid items-center grid-cols-1 gap-12 lg:grid-cols-2'>
           <div>
-            <p className='text-base font-semibold tracking-wider text-blue-600 uppercase'>
+            <p className='text-base font-semibold tracking-wider text-primary uppercase'>
               A social media for learners
             </p>
             <h1 className='mt-4 text-4xl font-bold text-black lg:mt-8 sm:text-6xl xl:text-8xl'>
@@ -19,7 +19,8 @@ function HeroSection() {
             <a
               href='#'
               title=''
-              className='inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400'
+              className='inline-flex items-center px-6 py-4 mt-8 font-semibold transition-all duration-200  rounded-full lg:mt-16 accent-solid-hover'
+              // className='inline-flex items-center px-6 py-4 mt-8 font-semibold text-black transition-all duration-200 bg-yellow-300 rounded-full lg:mt-16 hover:bg-yellow-400 focus:bg-yellow-400 '
               role='button'
             >
               Join for free

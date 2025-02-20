@@ -8,13 +8,13 @@ type HamburgerButtonProps = {
 
 function HamburgerButton({ active, onClick }: HamburgerButtonProps) {
   const hamburgerLineClass =
-    "absolute transition duration-300 ease-in-out h-0.5 rounded-lg w-full bg-black";
+    "absolute transition duration-300 ease-in-out h-0.5 rounded-lg w-full bg-strong dark:bg-strong-dark";
   // sr-only === 'close menu' or 'open menu' is visible for screen readers only
   // aria-hidden === meaningless for a screen reader
 
   return (
     <button
-      className={"p-2 hover:bg-neutral-light rounded-sm"}
+      className={"p-2 rounded-sm"}
       onClick={onClick}
       aria-label='Toggle navigation menu'
       aria-expanded={active}
