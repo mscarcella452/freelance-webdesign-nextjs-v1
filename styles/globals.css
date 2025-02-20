@@ -51,7 +51,7 @@
 
 @layer components {
   .site-header {
-    @apply fixed top-0 left-0 right-0 h-navbarHeight p-4;
+    @apply fixed top-0 left-0 right-0 h-navbarHeight p-4 z-10;
   }
 }
 
@@ -61,6 +61,10 @@
   /*-------------- Spacing & Layout Utilities -------------- */
   .inherit-gap {
     gap: inherit;
+  }
+
+  .nav-container {
+    @apply px-4 sm:px-6 lg:px-8;
   }
 
   .container-sm {

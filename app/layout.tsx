@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
-import { Lato, Montserrat, Archivo, League_Spartan } from "next/font/google";
+import { Lato, Archivo, League_Spartan } from "next/font/google";
+// import { Lato, Montserrat, Archivo, League_Spartan } from "next/font/google";
 import "@styles/globals.css";
 // import "./globals.css";
-// import Header from "@/components/header/Header";
+import Header from "@/components/header/Header";
 import Footer from "@/components/footer/Footer";
 
 const primaryFont = Lato({
@@ -38,19 +39,19 @@ export default function RootLayout({
       <body
         className={`${primaryFont.variable} ${secondaryFont.variable} ${accentFont.variable} h-[100vh] relative`}
       >
-        {/* <Header /> */}
-        <main className='pt-header flex flex-col'>{children}</main>
+        <Header />
+        <main className='pt-16 md:pt-20 flex flex-col'>{children}</main>
         <Footer />
       </body>
     </html>
   );
 }
 
-const palette = {
-  blue: "#0c5788",
-  gray: "#a6a6a6",
-  lgihtGray1: "#ebebeb",
-  lgihtGray2: "#fafafa",
-  accent: "#c1e1de",
-  black: "#3f3e3e",
-};
+// const palette = {
+//   blue: "#0c5788",
+//   gray: "#a6a6a6",
+//   lgihtGray1: "#ebebeb",
+//   lgihtGray2: "#fafafa",
+//   accent: "#c1e1de",
+//   black: "#3f3e3e",
+// };

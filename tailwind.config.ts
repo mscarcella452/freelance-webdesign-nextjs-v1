@@ -69,8 +69,9 @@ export default {
         // secondary: ["var(--font-montserrat)"], // Headings
         accent: ["var(--font-archivo)"], // Accent font
       },
+
       spacing: {
-        header: "60px",
+        // header: "60px",
         navbarHeight: "60px",
         heroSection: "calc(100vh - 60px)",
         navmenuHeight: "100vh",
