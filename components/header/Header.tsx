@@ -27,7 +27,7 @@ const Header = () => {
     </Link>
   );
   return (
-    <header className='bg-background-main dark:bg-background-main-dark nav-container fixed top-0 left-0 right-0 h-16 md:h-20 z-10 flex items-center'>
+    <header className='bg-background-main dark:bg-background-main-dark nav-container fixed top-0 left-0 right-0 h-16 md:h-20 z-50 flex items-center'>
       <nav className='flex gap-4 lg:gap-10 items-center w-full transition-colors duration-300 font-semibold text-strong dark:text-strong-dark'>
         <Link
           className='flex gap-1 items-center '

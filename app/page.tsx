@@ -1,12 +1,12 @@
 // import { clsx } from "clsx";
 import HeroSection from "@/features/HeroSection";
-import StatsSection from "@/features/stats/StatsSection";
+import PainPointSection from "@/features/painPoint/PainPointSection";
 
 export default function Home() {
   return (
     <>
       <HeroSection />
-      <StatsSection />
+      <PainPointSection />
       <div className='h-[500px]'></div>
     </>
   );
