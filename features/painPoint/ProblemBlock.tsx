@@ -2,36 +2,36 @@ import React from "react";
 
 function ProblemBlock() {
   return (
-    <section className='bg-background-main lg:bg-primary/10 relative'>
+    <div className='section-padding bg-background-main lg:bg-background-secondary relative'>
       {/* absolute background */}
-      <div className='hidden lg:block absolute bottom-0 left-0 w-full bg-background-secondary h-2/3 z-0' />
-      <div className='container-xl flex flex-col gap-16 lg:gap-24 xl:gap-32 relative z-10 lg:bg-background-main lg:shadow-md lg:rounded-lg lg:p-16 '>
+      <div className='hidden lg:block absolute top-0 left-0 w-full bg-[#EAEFF3] h-1/3 z-0' />
+      <div className='container-xl flex flex-col gap-16 lg:gap-24 xl:gap-32 relative z-10 lg:bg-background-main  lg:shadow-md lg:rounded-lg lg:p-16 '>
         <div className=' w-full grid xl:grid-cols-2 gap-16  divide-x-4 xl:divide-x-2 divide-solid divide-main-border'>
           {/* heading */}
           <div className='space-y-4'>
             <h4 className='text-p text-primary font-semibold'>
               Make Every Click Count
             </h4>
-            <h2 className='text-h-3 max-w-xl lg:max-w-[800px] font-semibold font-secondary text-normal'>
+            <h2 className='text-h-3 max-w-xl  font-semibold font-secondary text-normal'>
               Running a small business is tough, and your website might not be
               helping.
             </h2>
           </div>
           {/* stats */}
-          <div className='grid grid-cols-1 md:grid-cols-2 auto-rows-fr gap-8 pl-8 lg:pl-16'>
+          <div className='grid grid-cols-1 md:grid-cols-2 md:auto-rows-fr gap-8 pl-8 lg:pl-16'>
             {stats.map((stat, index) => (
               <StatItem key={index} {...stat} />
             ))}
           </div>
         </div>
         {/* content */}
-        <div className=' grid grid-cols-1 lg:grid-cols-2 gap-16 '>
+        <div className=' grid grid-cols-1 lg:grid-cols-2 gap-16'>
           {content.map((content, index) => (
             <ContentItem key={index} {...content} />
           ))}
         </div>
       </div>
-    </section>
+    </div>
   );
 }
 
@@ -50,7 +50,9 @@ function StatItem({
         {number}
         <span className='text-h-6'>%</span>
       </h4>
-      <h4 className='text-p text-normal max-w-[300px]'>{description}</h4>
+      <h4 className='text-p text-normal max-w-[300px] md:flex-grow'>
+        {description}
+      </h4>
       <small className='text-muted text-small place-self-end md:place-self-start rounded-md bg-background-secondary p-2 mt-6'>
         Source: {source}
       </small>
