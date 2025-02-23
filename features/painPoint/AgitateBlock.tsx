@@ -76,7 +76,7 @@ const Problem = ({
     <div className='space-y-2'>
       <h3
         id='block-title'
-        className='text-p font-semibold text-normal font-primary'
+        className='text-p-lg font-semibold text-normal font-primary'
       >
         {title}
       </h3>

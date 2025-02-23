@@ -4,7 +4,7 @@ import { ArrowLongRightIcon } from "@heroicons/react/24/outline";
 
 function SolutionBlock() {
   return (
-    <div className='section-padding bg-background-main'>
+    <div className='section-padding'>
       <div className='container-xl space-y-16 lg:space-y-24'>
         <div className='grid lg:grid-cols-2 gap-16 xl:gap-32 items-start'>
           <div className='flex flex-col gap-4 max-w-xl'>
@@ -29,7 +29,7 @@ function SolutionBlock() {
               getting a strategy designed for your long-term success.
             </p>
             <Link
-              className='primary-ghost-hover flex gap-1 items-center group font-primary font-semibold mt-4'
+              className='primary-ghost-hover flex gap-1 items-center group font-primary font-semibold mt-4 w-[fit-content]'
               href={"/about"}
             >
               Learn More About Me{" "}

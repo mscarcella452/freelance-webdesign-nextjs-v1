@@ -92,7 +92,7 @@
 
   /*------ headings ------*/
   .text-h-1 {
-    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold font-secondary;
+    @apply text-4xl sm:text-5xl lg:text-6xl xl:text-7xl  font-secondary;
   }
 
   .text-h-2 {
@@ -117,24 +117,24 @@
 
   /*------ paragraphs ------*/
   .text-p {
-    @apply text-base sm:text-lg lg:text-base font-primary;
+    @apply text-base sm:text-lg lg:text-base;
   }
 
   .text-p-sm {
-    @apply text-sm sm:text-base lg:text-sm font-primary;
+    @apply text-sm sm:text-base lg:text-sm;
   }
 
   .text-p-lg {
-    @apply text-lg sm:text-xl lg:text-lg font-primary;
+    @apply text-lg sm:text-xl lg:text-lg;
   }
 
   /*------ captions ------*/
   .text-caption {
-    @apply text-sm sm:text-base font-primary;
+    @apply text-sm sm:text-base;
   }
 
   /*------ small text ------*/
   .text-small {
-    @apply text-xs sm:text-sm font-primary;
+    @apply text-xs sm:text-sm;
   }
 }
